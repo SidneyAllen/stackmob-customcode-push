@@ -16,9 +16,6 @@
 
 package com.stackmob.example;
 
-import com.stackmob.example.crud.*;
-import com.stackmob.example.geopoints.*;
-import com.stackmob.example.relations.*;
 import com.stackmob.example.push.*;
 import com.stackmob.example.util.*;
 
@@ -37,28 +34,6 @@ public class EntryPointExtender extends JarEntryObject {
     list.add(new ReadParams());
     list.add(new Logging());
     list.add(new HttpRequest());
-    list.add(new TwilioSMS());
-    list.add(new SendGrid());
-    list.add(new Stripe());
-    /* Basic CRUD operations on schemas */
-    list.add(new CreateObject());
-    list.add(new ReadObject());
-    list.add(new UpdateObject());
-    list.add(new DeleteObject());
-    list.add(new ReadAllObjects());
-    /* Equality Queries */
-    list.add(new QueryByField());
-    list.add(new QueryByEquality());
-    list.add(new PaginateResults());
-    list.add(new DeleteMultiple());
-    /* Manipulating Relations and Arrays */
-    list.add(new OneStepCreateRelate());
-    list.add(new FetchExpand());
-    list.add(new RelateToParent());
-    list.add(new DeleteRelation());
-    /* Geopoint examples */
-    list.add(new ReadGeo());
-    list.add(new WriteGeo());
     /* Push Notifications */
     list.add(new SMPushRegisterDevice());
     list.add(new BroadcastPushNotification());
